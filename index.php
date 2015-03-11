@@ -53,7 +53,8 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
+	//define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
+	define('ENVIRONMENT', $_SERVER['SERVER_NAME']=='petulant-octo-wight.eu01.aws.af.cm' ? 'production' : 'development');
 
 /*
  *---------------------------------------------------------------
@@ -281,13 +282,6 @@ switch (ENVIRONMENT)
 	}
 
 	define('VIEWPATH', $view_folder);
-
-/*
- * --------------------------------------------------------------------
- * LOAD THE COMPOSER AUTOLOAD FILE
- * --------------------------------------------------------------------
- */
-include_once 'vendor/autoload.php';
 
 /*
  * --------------------------------------------------------------------
