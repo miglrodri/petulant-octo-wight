@@ -2,7 +2,7 @@
 
 ## DATABASE SEEDING
 - /install/seed
--- migrate to latest version and seed the database
+  - migrate to latest version and seed the database
 
 ## MIGRATIONS
 /install/migrate
