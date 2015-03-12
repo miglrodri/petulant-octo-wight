@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = 'http://petulant-octo-wight.com/';
+$config['base_url'] = 'http://petulant-octo-wight.aws.com/';
 
 /*
 |--------------------------------------------------------------------------
@@ -353,7 +353,7 @@ $config['encryption_key'] = '!uANtByIGI1BpVXZTJ$$sAG8GZl8pdww';
 | except for 'cookie_prefix' and 'cookie_httponly', which are ignored here.
 |
 */
-$config['sess_driver'] = 'database';
+$config['sess_driver'] = 'files';
 $config['sess_cookie_name'] = 'ci_session';
 $config['sess_expiration'] = 7200;
 $config['sess_save_path'] = 'ci_session';
