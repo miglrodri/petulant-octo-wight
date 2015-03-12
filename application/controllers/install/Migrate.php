@@ -5,7 +5,17 @@ class Migrate extends CI_Controller {
 	function __construct(){
 		parent::__construct();
 		$this->load->library('migration');
-	}
+
+		// can only be called from the command line
+		if (!is_cli()) {
+			//redirect(base_url());
+		}
+ 
+		// can only be run in the development environment
+		if (ENVIRONMENT !== 'development') {
+			//exit('Wowsers! You don\'t want to do that!');
+		}
+ 	}
 	
 	/**
 	* migrate database to latest version
