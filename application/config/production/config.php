@@ -29,7 +29,7 @@ $config['base_url'] = 'http://petulant-octo-wight.eu01.aws.af.cm/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------

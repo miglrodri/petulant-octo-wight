@@ -74,7 +74,7 @@ class Seed extends CI_Controller {
 					//'registration_date' => $this->faker->dateTimeThisYear->format('Y-m-d H:i:s'),
 					//'username' => 'miglrodri',
 					'email' => 'miguel.jesus@tangivel.com',
-					'hashed_pass' => '1234567',
+					'hashed_pass' => sha1('1234567'),
 					'created_at' => $now->format('Y-m-d H:i:s'),
 					'modified_at' => $now->format('Y-m-d H:i:s'),
 				);
@@ -86,7 +86,7 @@ class Seed extends CI_Controller {
 					//'registration_date' => $this->faker->dateTimeThisYear->format('Y-m-d H:i:s'),
 					//'username' => $this->faker->unique()->userName, // get a unique nickname
 					'email' => $this->faker->email,
-					'hashed_pass' => '1234567',
+					'hashed_pass' => sha1('1234567'),
 					'created_at' => $now->format('Y-m-d H:i:s'),
 					'modified_at' => $now->format('Y-m-d H:i:s'),
 				);	
