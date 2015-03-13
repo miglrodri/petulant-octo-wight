@@ -8,6 +8,7 @@ class Page extends CI_Controller {
 		$data['user_id'] = $this->session->userdata('id');
 		$data['user_email'] = $this->session->userdata('email');
 		$data['page_title'] = 'Homepage';
+		$data['brand'] = 'SEO Testing';
 		//var_dump($data);
 		$this->load->view('templates/header', $data);
 		$this->load->view('homepage', $data);
