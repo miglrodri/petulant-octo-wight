@@ -1,5 +1,10 @@
 # petulant-octo-wight
 
+## Steps
+1. /migrate/latest
+2. /seed (**if makes sense**)
+
+
 ## Database Seed *(development/CLI)*
 - /install/seed
   - migrate to latest version and seed the database

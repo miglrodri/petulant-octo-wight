@@ -4,7 +4,7 @@
  * To run this on CLI
  * http://stevethomas.com.au/php/database-seeding-in-codeigniter.html
  * see php version: php -v
- * $ php index.php reset index
+ * $ php index.php seed index
  */
 
 class Seed extends CI_Controller {
@@ -53,7 +53,7 @@ class Seed extends CI_Controller {
 		echo 'seeding: DONE\n';
 		echo PHP_EOL;
 
-		redirect(base_url().'install/reset/users');
+		redirect(base_url().'install/seed/users');
 	}
  
 	/**
@@ -98,7 +98,6 @@ class Seed extends CI_Controller {
 		echo PHP_EOL;
 	}
 	
- 
 	private function _truncate_db()
 	{
 		$this->user->truncate();

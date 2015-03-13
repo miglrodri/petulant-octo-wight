@@ -3,12 +3,12 @@
 class Page extends CI_Controller {
 
 	public function index() {
-		$this->output->enable_profiler(TRUE);
+		//$this->output->enable_profiler(TRUE);
 		$this->load->library('session');
 		$data['user_id'] = $this->session->userdata('id');
 		$data['user_email'] = $this->session->userdata('email');
 		$data['page_title'] = 'Homepage';
-		var_dump($data);
+		//var_dump($data);
 		$this->load->view('templates/header', $data);
 		$this->load->view('homepage', $data);
 		$this->load->view('templates/footer');
