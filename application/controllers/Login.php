@@ -5,6 +5,7 @@ class Login extends CI_Controller {
 		parent::__construct();
 		$this->load->helper('form');
 		$this->load->library('form_validation');
+		$this->load->library('session');
 	}
 
 	public function index() {
@@ -17,7 +18,8 @@ class Login extends CI_Controller {
 			$this->index();
 			return;
 		}
-		redirect(base_url().'install/schema');
+		//redirect(base_url().'install/schema');
+		$this->auth();
 	}
 
 	private function _submit_validate() {
